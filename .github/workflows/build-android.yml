@@ -33,7 +33,7 @@ jobs:
     
     - name: Build APK with Flet
       run: |
-        flet build apk todo_app.py --verbose
+        flet build apk --module-name todo_app --verbose
     
     - name: Upload APK
       uses: actions/upload-artifact@v4
